@@ -1,0 +1,593 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+:root {
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+
+    /* font family variables. */
+    --roboto: 'Roboto', cursive;
+}
+
+/* .oo{
+  margin: auto !important;  
+     <ul class="navbar-nav ">
+} */
+/* .navbar-brand{
+    margin: 0 !important;
+} */
+.container-fluid {
+    padding: 0 !important;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+/* focus */
+/* .container{
+    max-width: 1240px !important;
+} */
+.nav-link {
+    font-family: "Roboto", cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--title-color);
+
+}
+
+.navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* banner area */
+
+.site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+
+}
+
+/* note-> h3 */
+.site-banner,
+.about-area,
+.brand-area,
+.services-area,
+.project-area,.footer-area,.subscribe-us-area {
+    padding: 3rem 0;
+}
+
+.site-title h3 {
+    padding-top: 15%;
+    font-weight: 500;
+}
+
+.site-title h3::after {
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-title h1 {
+    font-size: 5rem;
+}
+
+.site-title h4 {
+    font-size: 1.5rem;
+}
+
+.banner-image>img,
+.about-image>img {
+    width: 90%;
+
+}
+
+/* about */
+.about-title h2 {
+    padding: 1.5rem 0;
+}
+
+.about-title h2>span {
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
+    overflow-wrap: break-word;
+}
+
+.about-area .paragraph>p {
+    padding: 0.6rem 0;
+    font-weight: 400;
+    font-size: 20px;
+    /* padding-right: 1rem; */
+}
+
+/* brand area */
+/* note */
+
+.brand-area .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-lg-4>.single-brand {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    /* note */
+    transition: transform .4s ease;
+}
+
+.col-lg-4>.single-brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.col-lg-4>.single-brand:hover>img {
+    filter: brightness(0.15);
+    /* note */
+}
+
+.col-xl-6 .experience-area {
+    background-color: rgb(247, 242, 234);
+    width: 26rem;
+    height: 24rem;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 2rem;
+    
+}
+
+.years-area,
+.call-area {
+    display: flex;
+}
+
+.years-area .word,
+.call-now {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-area .years-area {
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    /* width: 40rem; */
+    height: 15rem;
+    position: relative;
+}
+
+.years-area .years {
+    font-size: 5rem;
+    color: #854fee;
+    padding-right: 1rem;
+}
+
+.call-area>span {
+    padding-right: 1rem;
+}
+
+.call-area .call-now {
+    padding-left: 3rem;
+}
+
+.call-now>a {
+    color: #854fee;
+}
+
+/* services-area */
+.services-area .para {
+    margin-top: 1rem;
+    padding: 0 6rem;
+    font-size: 20px;
+}
+
+.card-body .card-title {
+    font-size: 25px;
+}
+
+.services-area .services-list {
+    margin: 4.5rem 0;
+}
+
+.services-area .services-list .services {
+    height: 21rem;
+    background-color: rgb(247, 244, 240);
+    /* margin: 1rem 1rem; */
+    overflow: hidden;
+    transition: transform .4s ease;
+    font-size: 20px;
+    
+}
+
+.services-area .services-list .services:hover {
+    background-color: rgb(226, 196, 155);
+    transform: scale(1.03);
+}
+
+/* Services Area */
+/* Project Area */
+.project-area .button-group {
+    margin: 2.6rem 0;
+}
+
+.project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 550 17px/33px var(--roboto);
+    /* ? */
+    text-transform: uppercase;
+    padding-right: 3rem;
+}
+
+/*.project-area .button-group button + button{
+    padding-left: 3rem;
+} */
+/* ??????                                      ???????? */
+.project-area .grid .our-project>.title h4 {
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.project-area .grid .our-project .img img {
+    width: 26rem;
+}
+
+
+/* About Me */
+
+.project-area .about-area .about-title p {
+    padding: 1rem 7rem;
+}
+
+ .about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.about-area .client .client-img {
+    padding: 2rem;
+}
+
+.about-area .client .about-client {
+    padding-top: 2rem;
+}
+
+.about-area .client .about-client h4 {
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.about-area .client .about-client p {
+    font-size: 14px;
+}
+
+/* .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+} */
+
+ .about-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* glople */
+
+
+
+/* Global Classes */
+
+.title-text {
+    font: normal bold 50px/ 72px var(--roboto);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/ 25px var(--roboto);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1 {
+    font: normal bold 39px/ 40px var(--roboto);
+}
+
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+/* Subscribe me Area  */
+.subscribe-us-area .subscribe{
+    background: url(../img/subscribe-bg.png) no-repeat ;
+    background-size: cover;
+  color: aliceblue !important;
+}
+.subscribe-us-area .subscribe .subscribe-title p{
+  color: aliceblue !important;
+    padding-bottom: 2rem;
+}
+.subscribe-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
+}
+.subscribe-title{
+    margin-top: 6rem;
+}
+.w{
+   padding-bottom: 6rem;
+}
+.i-box{
+    background: transparent;
+    color: #ffffff;
+    
+}
+.form-control:focus {
+    color: #83b8ed;
+    background-color: transparent;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.i-box::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+/* footer-area */
+.footer-area .site-logo ,.social h5,.social{
+padding-bottom: 2rem;
+}
+
+
+.footer-area{
+    background: url(../img/footer-bg.png) no-repeat;
+    background-size: cover;
+}
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media (max-width: 380px) {
+    .years-area{
+        display: block;
+    }
+}
+
+@media (max-width: 540px) {
+    .bbb{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .site-title h1 {
+        font-size: 2.8rem;
+    } 
+.about-title h2>span {
+    letter-spacing:0;
+}
+.col-xl-6 .experience-area {
+    width: 88%;
+}
+.years-area .word span{
+    font-size: 1.6rem;
+}
+.subscribe-box{
+   flex-wrap: wrap;
+ justify-content: flex-end;
+}
+.subscribe-us-area .subscribe-box .a{
+   margin-right: 1.5rem;
+}
+.footer-area{
+   padding: 1rem 0;
+}
+.footer-area .site-logo ,.social h5,.social{
+    padding-bottom: 1rem;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+    }
+    .site-title h3 {
+        font-size: 3rem;
+        padding-top: 0;
+    }
+    /* .site-title h1 {
+        font-size: 5rem;
+    } */
+  .container .banner-image img{
+        margin-top: 2rem;
+        width: 70%;
+    }
+    .about-area .about-image img{
+        width: 70%;
+    }
+    .brand_box{
+        margin-top: 2rem;
+    }
+    .brand_box ,.banner-image ,.about-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .services-area .services-list .services{
+margin-bottom: 2rem;
+    }
+    .subscribe-us-area{
+      padding: 0 1%;
+     }
+ }
+
+
+@media (min-width: 991px) {
+   .col-xl-6 .experience-area {
+    margin: 0 30%;
+    margin-top: 9% ;
+}
+.container .banner-image img{
+    padding:0 ;
+    width: 90%;
+}
+
+
+}
+
+.project-area .container .grid .element-item{
+   display: flex;
+   justify-content: center;
+    }
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .col-xl-6 .experience-area {
+        margin: 10% ;
+        margin-top: 0 ;
+    }
+}
+@media (min-width: 1300px) {
+    .col-xl-6 .experience-area {
+        margin: 20% ;
+        margin-top: 0 ;
+    }
+}
